@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.myweb.www.repository.ConsultDAO">
+    	<insert id="register">
+    	INSERT INTO consult (csno, csid, cscontent, cstype, csname, cstel)
+		VALUES (#{csno}, #{csid}, #{cscontent}, #{cstype}, #{csname}, #{cstel})
+    	</insert>
+    	<select id="isThere" resultType="com.myweb.www.domain.ConsultVO">
+		select * from consult
+		</select>
+    </mapper>

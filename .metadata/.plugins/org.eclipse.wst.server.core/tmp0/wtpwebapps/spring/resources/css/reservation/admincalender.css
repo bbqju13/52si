@@ -1,0 +1,66 @@
+*{
+  font-family: 'Bebas Neue', sans-serif;
+}
+body {
+  margin-top: 40px;
+  font-size: 14px;
+}
+#wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#calendar-wrap {
+  width: 80%;
+  height: 80%;
+  cursor: pointer;
+}
+.fc-event-title-container {
+  text-align: center;
+}
+.fc-day:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.fc-day.event-select-disabled {
+  background-color: red;
+  color: white;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+.fc .fc-button.fc-prev-button,
+.fc .fc-button.fc-next-button,
+.fc .fc-button.fc-dayGridMonth-button,
+.fc .fc-button.fc-timeGridWeek-button,
+.fc .fc-button.fc-listWeek-button,
+.fc .fc-button.fc-listYear-button {
+    background-color: #555 !important;
+}
+
+
+
+.apple-style-button {
+  background-color: #555;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: background 0.3s;
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.apple-style-button:hover {
+  background-color: #333;
+}

@@ -1,0 +1,179 @@
+body {
+    background-color: #fbfbfd;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.h1{
+    margin-top: 55px;
+    margin-bottom: 0;
+}
+
+#dtoListDiv {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#dtoListDiv ul {
+    padding: 0;
+    margin: 0 0 80px 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+#dtoListDiv ul li {
+    height: 500px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#dtoListDiv ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    height: 100%;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#dtoListDiv ul li a .img-container img:hover {
+    transform: scale(1.03); /* 이미지만 확대 */
+}
+
+#dtoListDiv ul li a .img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden; /* 이미지가 컨테이너를 벗어나는 것을 방지 */
+}
+
+#dtoListDiv ul li a .img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out; /* 이미지 확대 애니메이션 */
+}
+
+#dtoListDiv ul li a .badge-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#dtoListDiv ul li a .badge-container img {
+    width: 40px;
+    height: 40px;
+}
+
+.info-1 {
+    display: block;
+    margin: 5px 0;
+    margin-top: 60px;
+}
+
+.info-2, .info-3 {
+    display: block;
+    margin: 5px 0;
+}
+
+#dtoListDiv ul li:hover{
+	border: 2px solid #007AFF;
+}
+
+.nav-btn {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.nav-btn:hover {
+    background: #555; /* 변경: 호버 시 버튼이 사라지는 대신 색상이 변경됩니다. */
+}
+
+.nav-bar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: #555;
+    z-index: 9999;
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.nav-bar a {
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.nav-bar a:hover {
+    background: #555;
+}
+/* top btn */
+#top-button {
+    display: none; /* 기본적으로 버튼이 보이지 않도록 설정 */
+    position: fixed; 
+    bottom: 120px; /* 하단에서 20px 떨어진 위치에 배치 */
+    left: 30px; /* 좌측에서 30px 떨어진 위치에 배치 */
+    z-index: 99; /* 다른 요소들 위에 보이도록 z-index 설정 */
+    border: none;
+    outline: none;
+    background-color: #555; /* 배경색은 원하는 색으로 설정 */
+    color: white; /* 글자 색은 원하는 색으로 설정 */
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+/* 스크롤바 커스텀 */
+::-webkit-scrollbar {
+    width: 0.7rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: #c5c5c5;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #222224;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f9f9f9;
+  }
+  
+.emptyPara {
+	margin-top: 8rem;
+}

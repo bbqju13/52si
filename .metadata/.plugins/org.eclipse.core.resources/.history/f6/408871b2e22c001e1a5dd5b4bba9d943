@@ -1,0 +1,43 @@
+2023-06-27
+dbname: springproject
+id: springuser
+pw: mysql
+
+create table product(
+pno int auto_increment,
+type_a varchar(100) not null,
+pname varchar(100) not null,
+price int not null,
+content text,
+fileCategoryNum int default 0,
+primary key(pno));
+
+2023-06-28
+create table customer(
+cid varchar(100) not null,
+cname varchar(10) not null,
+cpw varchar(100) not null,
+cage int not null,
+cgender varchar(5) not null,
+cnick_name varchar(10) not null,
+cemail varchar(50) not null,
+ctel int not null,
+cadd varchar(100) not null,
+cdate datetime default now(),
+primary key(cid));
+
+create table file(
+uuid varchar(256) not null,
+save_dir varchar(256) not null,
+file_name varchar(256) not null,
+file_type tinyint(1) default 0,
+file_size int,
+pno int,
+primary key(uuid));
+
+2023-06-30
+create table consult(
+csno int not null auto_increment,
+cscontent text,
+csdate datetime default now(),
+primary key(csno));

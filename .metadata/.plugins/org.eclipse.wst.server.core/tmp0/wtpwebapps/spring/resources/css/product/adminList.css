@@ -1,0 +1,72 @@
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #797979;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+/* ******************************************* */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 30px;
+  text-align: center;
+}
+
+th, td {
+  text-align: center;
+  padding: 15px; /* 셀 주변에 여백 추가 */
+}
+
+.edit-link {
+  color: black;
+}
+.edit-link:hover{
+  color: white;
+}
+
+/* 테이블에 border-radius 추가 */
+.table {
+  border-radius: 15px;
+  overflow: hidden; /* 테이블에 border-radius가 적용되게 함 */
+}
+.highlight {
+  background-color: #27ae60 !important;
+  color: black !important;
+  transition: background-color 0.5s ease;
+}
+.highlight:hover{
+  cursor: pointer;
+}
+/* top btn */
+#top-button {
+  display: none; /* 기본적으로 버튼이 보이지 않도록 설정 */
+  position: fixed; 
+  bottom: 50px; /* 하단에서 20px 떨어진 위치에 배치 */
+  left: 10px; /* 좌측에서 30px 떨어진 위치에 배치 */
+  z-index: 99; /* 다른 요소들 위에 보이도록 z-index 설정 */
+  border: none;
+  outline: none;
+  background-color: #555; /* 배경색은 원하는 색으로 설정 */
+  color: white; /* 글자 색은 원하는 색으로 설정 */
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#paging {
+	margin-bottom: 32px;
+}
